@@ -158,7 +158,7 @@ The three main contracts have been tested, each with its own javascript tests.
 
 ## Authors
 
-* **Sinico Matteo** - 
+* **Sinico Matteo**  
 
 ## Acknowledgments
 
