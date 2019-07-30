@@ -137,7 +137,7 @@ Hope you like it :)
 ## Testing the Smart Contracts
 
 ```
-cd smart-contracts
+cd ssi-smart-contracts
 truffle dev
 ```
 
