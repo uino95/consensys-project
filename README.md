@@ -77,18 +77,11 @@ Switch to Ropsten testnet. You will need some ether to interact with the contrac
 #### Dockerized version
 Start docker.
 
-Now pull the docker images from the Docker Hub:
-
-```
-docker pull ....
-docker pull ....
-```
-
 Run the containers for the the server and the client like below:
 ```
-docker run --detach -e ADDRESS="0xF8007e77c86c62184175455f2D97BfB1e3E350ea" -e PRIVATEKEY="EA0A0787245AFB3E1256D733682941506200B468839FBA3176B1857302697A18" andreataglia/ssi-consensys-backend:0.3
+docker run -p 3000:3000 -e ADDRESS=<YOUR_ADDRESS> -e PRIVATEKEY=<YOUR_PRIVATE_KEY matteosinico/ssi-consensys-backend:latest
 
-docker run -p 8080:8080 --rm --name frontend andreataglia/ssi-consensys-frontend:1.0
+docker run -p 8080:8080 --rm --name frontend matteosinico/ssi-consensys-frontend:latest
 ```
 
 Now navigate http://localhost:8080 where you should see the home page of the project.
